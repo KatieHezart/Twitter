@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
- 
+ get "users/new"
+  
   root 'static_pages#home'
   match '/about', to: 'static_pages#about', via: :get
   match '/contact', to: 'static_pages#contact', via: :get
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  # root 'welcome#index'
   
 
   # Example of regular route:
